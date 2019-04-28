@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main_graph"
+    app:startDestination="@id/profileFragment">
+
+    <fragment android:id="@+id/profileFragment"
+              android:name="com.lydone.gazprombankspringhack.fragments.ProfileFragment" android:label="profile_fragment"
+              tools:layout="@layout/profile_fragment"/>
+    <fragment
+        android:id="@+id/ratingsFragment"
+        android:name="com.lydone.gazprombankspringhack.fragments.RatingsFragment"
+        android:label="ratings_fragment"
+        tools:layout="@layout/ratings_fragment" />
+    <fragment
+        android:id="@+id/teamProgressFragment"
+        android:name="com.lydone.gazprombankspringhack.fragments.TeamProgressFragment"
+        android:label="team_progress_fragment"
+        tools:layout="@layout/team_progress_fragment" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.lydone.gazprombankspringhack.fragments.NotificationsFragment"
+        android:label="notifications_fragment"
+        tools:layout="@layout/notifications_fragment" />
+    <activity
+        android:id="@+id/pollActivity"
+        android:name="com.lydone.gazprombankspringhack.PollActivity"
+        android:label="activity_poll"
+        tools:layout="@layout/activity_poll" />
+</navigation>
